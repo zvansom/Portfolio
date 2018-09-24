@@ -22,14 +22,16 @@ const StyledNav = styled.nav`
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-auto-flow: column;
   background-color: #222;
-  padding: 20px;
 `;
 
 const StyledLink = styled(Link)`
   color: white;
+  padding: 25px 0 0;
+  min-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   &:hover {
     color: red;
+    background: #444;
   }
 `;
