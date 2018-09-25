@@ -1,10 +1,12 @@
 import React from 'react';
 
 const FourOhFour = () => (
-  <div>
-    <h1>404 PAGE</h1>
-    <p>Nihil saepe molestiae cupiditate facilis non dignissimos velit. Exercitationem et ut id eos architecto dolores unde omnis. Ex non voluptatem nam pariatur harum quis esse.</p>
-  </div>
+  <main>
+    <h2>404 PAGE</h2>
+    <p>
+      Uh oh! How did you manage to get here?  Please find your way back to my portfolio.
+    </p>
+  </main>
 );
 
 export default FourOhFour;
