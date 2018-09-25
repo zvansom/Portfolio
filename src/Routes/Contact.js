@@ -19,6 +19,7 @@ export default class Contact extends Component {
   handleSubmit = e => {
     e.preventDefault();
     console.log('form submitted')
+    // Insert EmailJS call here.
   }
 
   render() {

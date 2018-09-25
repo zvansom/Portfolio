@@ -1,10 +1,26 @@
 import React from 'react';
 
 const Skills = () => (
-  <div>
-    <h1>Skills PAGE</h1>
-    <p>Nihil saepe molestiae cupiditate facilis non dignissimos velit. Exercitationem et ut id eos architecto dolores unde omnis. Ex non voluptatem nam pariatur harum quis esse.</p>
-  </div>
+  <main>
+    <h2>Skills</h2>
+    <h3>I am a full-stack Javascript developer.</h3>
+    <h4>I have a ton of tools in my kit to solve your web-development needs!</h4>
+
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>Javascript ES6</li>
+      <li>React</li>
+      <li>NodeJS</li>
+      <li>Express</li>
+      <li>Postgres</li>
+      <li>MongoDB</li>
+      <li>Mongoose</li>
+      <li>Git</li>
+      <li>Python</li>
+      <li>CSS Grid</li>
+    </ul>
+  </main>
 );
 
 
