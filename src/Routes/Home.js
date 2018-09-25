@@ -1,10 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Home = () => (
-  <main>
-    <h1>HOME PAGE</h1>
-    <p>Nihil saepe molestiae cupiditate facilis non dignissimos velit. Exercitationem et ut id eos architecto dolores unde omnis. Ex non voluptatem nam pariatur harum quis esse.</p>
-  </main>
+  <StyledMain>
+    <h1>Hi, I'm <span>Zach</span></h1>
+    <h2>I like to build things</h2>
+    <p>
+      I've built things my whole life.  Now I build performative, engaging websites.  Let's build something together.
+    </p>
+    <a className="button" href="/about">Step 1</a>
+  </StyledMain>
 );
 
 export default Home;
+
+const StyledMain = styled.main`
+  > a {
+    justify-self: center;
+  }
+`;
