@@ -1,17 +1,23 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default class Navbar extends Component {
   render() {
+    const styles = {
+      background: '#eee',
+      color: '#222',
+      borderBottom: '3px solid #222',
+      
+    }
     return(
       <StyledNav>
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/about">About Me</StyledLink>
-        <StyledLink to="/resume">Resume</StyledLink>
-        <StyledLink to="/skills">Skills</StyledLink>
-        <StyledLink to="/projects">Projects</StyledLink>
-        <StyledLink to="/contact">Contact</StyledLink>
+        <StyledLink activeStyle={{...styles}}  exact to="/">Home</StyledLink>
+        <StyledLink activeStyle={{...styles}} to="/about">About Me</StyledLink>
+        <StyledLink activeStyle={{...styles}} to="/resume">Resume</StyledLink>
+        <StyledLink activeStyle={{...styles}} to="/skills">Skills</StyledLink>
+        <StyledLink activeStyle={{...styles}} to="/projects">Projects</StyledLink>
+        <StyledLink activeStyle={{...styles}} to="/contact">Contact</StyledLink>
       </StyledNav>
     )
   }
@@ -24,14 +30,14 @@ const StyledNav = styled.nav`
   background-color: #222;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   color: white;
   padding: 25px 0 0;
   min-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
   &:hover {
-    color: red;
+    color: #222;
     background: #444;
   }
 `;
