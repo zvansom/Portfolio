@@ -1,10 +1,10 @@
 import React from 'react';
 
 const About = () => (
-  <div>
-    <h1>About PAGE</h1>
-    <p>Nihil saepe molestiae cupiditate facilis non dignissimos velit. Exercitationem et ut id eos architecto dolores unde omnis. Ex non voluptatem nam pariatur harum quis esse.</p>
-  </div>
+  <main>
+    <h2>About Me</h2>
+    <p></p>
+  </main>
 );
 
 export default About;

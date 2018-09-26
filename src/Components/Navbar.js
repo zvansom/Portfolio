@@ -7,8 +7,7 @@ export default class Navbar extends Component {
     const styles = {
       background: '#eee',
       color: '#222',
-      borderBottom: '3px solid #222',
-      
+      borderBottom: '2px solid #22222280',
     }
     return(
       <StyledNav>
@@ -27,17 +26,27 @@ const StyledNav = styled.nav`
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   grid-auto-flow: column;
-  background-color: #222;
+  align-items: center;
+  background-color: #22222280;
+
+  > a:nth-of-type(1) {
+    margin-left: 100px;
+  }
+
+  > a:last-of-type {
+    margin-right: 100px;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
   color: white;
-  padding: 25px 0 0;
-  min-height: 40px;
+  padding: 5px 0 0;
+  min-height: 30px;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease-in;
   &:hover {
-    color: #222;
     background: #444;
   }
 `;
