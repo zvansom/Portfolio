@@ -40,11 +40,18 @@ nav {
   font-size: 2rem;
 }
 
+nav img {
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  margin-top: 20px;
+}
+
 nav button {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 40px;
+  top: 20px;
   background: transparent;
   border: 3px solid #eee;
   color: #eee;
@@ -61,7 +68,7 @@ nav a {
 
 nav .social-media {
   position: absolute;
-  bottom: 50px;
+  bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -78,7 +85,6 @@ nav a {
 nav .social-media__icons {
   width: 40px;
   height: 40px;
-  margin-left: 5px;
 }
 
 .nav-drawer {
@@ -89,18 +95,27 @@ nav .social-media__icons {
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   height: 100vh;
+  display: grid;
+  left: 100px;
+  color: #eee;
+  text-decoration: none;
+}
+
+.selected {
+  color: black;
+}
+
+.selected::before {
+  content: "👉";
+  margin-right: 5px;
 }
 
 .nav-drawer a {
   font-size: 6rem;
-  color: #eee;
-  display: inline-block;
-  text-decoration: none;
-  line-height: 10rem;
-}
-
-.nav-drawer a:nth-of-type(1) {
-  margin-top: 6rem;
+  display: inline;
+  align-self: center;
+  text-align: left;
+  margin-left: 25%;
 }
 
 .nav-drawer a:hover {
@@ -110,7 +125,6 @@ nav .social-media__icons {
 .drawer-open {
   width: 100vw;
   background: #bada55ee;
-  transform: translateX(100px);
 }
 
 .home h2{
