@@ -1,5 +1,6 @@
 :root {
   font-size: 10px;
+  box-sizing: border-box;
 }
 
 html {
@@ -8,8 +9,6 @@ html {
 
 body {
   min-height: 100%;
-  background-image: url(./assets/gravel.png);
-  background-color: #eee;
 } 
 
 .App {
@@ -17,19 +16,7 @@ body {
   text-align: center;
   color: #222;
   display: grid;
-  grid-template-rows: 4rem 1fr;
-  gap: 20px;
-}
-
-main {
-  background: #aaaaaabc;
-  border-radius: 10px;
-  font-family: 'Roboto', sans-serif;
-  max-width: 960px;
-  margin: 0 auto;
-  font-size: 2rem;
-  display: grid;
-  gap: 20px;
+  grid-template-columns: 100px 1fr;
 }
 
 .button {
@@ -39,4 +26,93 @@ main {
   text-decoration: none;
   color: #222;
   font-size: 2rem;
+}
+
+nav {
+  width: 100px;
+  background: #bada55;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+nav button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40px;
+  background: transparent;
+  border: 3px solid #eee;
+  color: #eee;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 4rem;
+  line-height: 4rem;
+  left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eee;
+}
+
+nav .social-media {
+  position: absolute;
+  bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+nav .resume {
+  grid-column: span 2;
+}
+
+nav a {
+  align-self: flex-end;
+}
+
+nav .social-media__icons {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.nav-drawer {
+  transition: transform 2s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  width: 0;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.nav-drawer a {
+  font-size: 6rem;
+  color: #eee;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 10rem;
+}
+
+.nav-drawer a:nth-of-type(1) {
+  margin-top: 6rem;
+}
+
+.nav-drawer a:hover {
+  color: #222;
+}
+
+.drawer-open {
+  width: 100vw;
+  background: #bada55ee;
+  transform: translateX(100px);
+}
+
+.home h2{
+  font-size: 5rem;
 }
