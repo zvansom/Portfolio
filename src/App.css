@@ -1,15 +1,31 @@
+/* 
+
+------------   PAGE WIDE   -------------
+
+*/
+
 :root {
-  font-size: 10px;
+  --green: #bada55;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 html {
-  height: 100%; 
+  background: #eeeeee;
 }
 
 body {
   min-height: 100%;
 } 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 .App {
   box-sizing: border-box;
@@ -19,46 +35,30 @@ body {
   grid-template-columns: 100px 1fr;
 }
 
-.button {
-  width: 300px;
-  border: 1px solid #222;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #222;
-  font-size: 2rem;
-}
+/* -----------------------------------
+
+-----           NAV BAR          -----
+
+----------------------------------  */
 
 nav {
   width: 100px;
-  background: #bada55;
+  background: var(--green);
   height: 100vh;
   z-index: 2;
   position: relative;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+nav .nav-menu,
 nav img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   justify-self: center;
   margin-top: 20px;
-}
-
-nav button {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 20px;
-  background: transparent;
-  border: 3px solid #eee;
-  color: #eee;
-  border-radius: 5px 5px 5px 5px;
-  font-size: 4rem;
-  line-height: 4rem;
-  left: 25px;
 }
 
 nav a {
@@ -76,10 +76,6 @@ nav .social-media {
 
 nav .resume {
   grid-column: span 2;
-}
-
-nav a {
-  align-self: flex-end;
 }
 
 nav .social-media__icons {
@@ -127,6 +123,16 @@ nav .social-media__icons {
   background: #bada55ee;
 }
 
-.home h2{
-  font-size: 5rem;
+/* --------------------------------------
+   ------    MAIN PAGE            -------
+  -----------------------------------  */
+
+main {
+  align-self: center;
+}
+
+.page h2{
+  font-size: 8rem;
+  margin: 0;
+  font-weight: 300;
 }
