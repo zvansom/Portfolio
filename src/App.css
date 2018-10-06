@@ -32,7 +32,6 @@ h6 {
   text-align: center;
   color: #222;
   display: grid;
-  grid-template-columns: 100px 1fr;
 }
 
 /* -----------------------------------
@@ -46,7 +45,7 @@ nav {
   background: var(--green);
   height: 100vh;
   z-index: 2;
-  position: relative;
+  position: fixed;
   display: grid;
   grid-template-rows: 1fr 1fr;
   font-size: 2rem;
@@ -124,16 +123,23 @@ nav .social-media__icons {
 }
 
 /* --------------------------------------
-   ------    MAIN PAGE            -------
+   ------    MAIN PAGES            -------
   -----------------------------------  */
 
 main {
-  align-self: center;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 100px;
+}
+
+.home {
 }
 
 .home--title {
   font-size: 8rem;
   margin: 0;
+  margin-top: 25vh;
   font-weight: 300;
 }
 
@@ -163,4 +169,61 @@ main {
 
 .home--cta:hover {
   color: #111;
+}
+
+/* -------------------------------------
+------      ABOUT PAGE         --------
+-------------------------------------- */
+
+.about {
+  text-align: left;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.about--title {
+  font-size: 5rem;
+  margin-top: 15vh;
+  font-weight: 300;
+  align-self: center;
+}
+
+.about--image {
+  position: absolute;
+  left: 60%;
+  top: 25%;
+}
+
+.about--headline,
+.about--skills {
+  font-size: 2rem;
+  margin-top: 3%;
+}
+
+.about--headline {
+  width: 50%;
+}
+
+.about--text {
+  margin-top: 4vh;
+  font-size: 1.4rem;
+  max-width: 50%;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+li {
+  font-size: 1.4rem;
+  display: inline;
+}
+
+li::after {
+  content: '|';
+  margin: 0 2ch;
+}
+
+li:last-of-type {
+  content: none;
 }
