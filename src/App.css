@@ -131,8 +131,36 @@ main {
   align-self: center;
 }
 
-.page h2{
+.home--title {
   font-size: 8rem;
   margin: 0;
   font-weight: 300;
+}
+
+.home--title span {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.home--subtitle {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.home--text {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.home--cta {
+  font-size: 3rem;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--green);
+}
+
+.home--cta:hover {
+  color: #111;
 }
