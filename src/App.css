@@ -181,7 +181,8 @@ main {
   position: relative;
 }
 
-.about--title {
+.about--title,
+.projects--title {
   font-size: 5rem;
   margin-top: 15vh;
   font-weight: 300;
@@ -195,7 +196,7 @@ main {
 }
 
 .about--headline,
-.about--skills {
+.about--skills  {
   font-size: 2rem;
   margin-top: 3%;
 }
@@ -224,6 +225,54 @@ li::after {
   margin: 0 2ch;
 }
 
-li:last-of-type {
-  content: none;
+li:last-of-type::after {
+  content: '';
+}
+
+/* --------------------------
+------  PROJECTS PAGE   ------ 
+--------------------------  */
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0;
+  justify-content: center;
+}
+
+.project-card--title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.project-card--title,
+.project-card--subtitle {
+  grid-column: span 2;
+}
+
+.project-card--subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.project-card--content {
+  align-self: center;
+  padding: 0 30px;
+}
+
+.project-card--screenshot {
+  max-height: 400px;
+  max-width: 500px;
+}
+
+.project-card--description {
+  font-size: 1.4rem;
+}
+
+.project-card--link {
+  padding: 5px 15px;
+  margin-right: 20px;
+  font-size: 1.4rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }

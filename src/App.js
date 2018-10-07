@@ -7,7 +7,6 @@ import './App.css';
 import Home from './Routes/Home'
 import About from './Routes/About'
 import Resume from './Routes/Resume'
-import Skills from './Routes/Skills'
 import Projects from './Routes/Projects'
 import Contact from './Routes/Contact'
 import FourOhFour from './Routes/FourOhFour'
