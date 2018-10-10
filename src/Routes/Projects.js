@@ -33,14 +33,16 @@ export default class Projects extends Component {
     return (
     <main className="projects">
       <h2 className="projects--title">Projects</h2>
-      {PROJECT_DATA.map(project => 
-        <ProjectCard 
+      {PROJECT_DATA.map((project, idx) => 
+        <ProjectCard
+          key={idx}
           title={project.title}
           tagline={project.tagline}
           github={project.github}
           link={project.link}
           imgSrc={project.imgSrc}
           description={project.description}
+          award={project.award}
         />)}
       </main> 
     )

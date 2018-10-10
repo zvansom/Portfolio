@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
+import gmail from '../assets/gmail.svg';
 
 export default class Contact extends Component {
   render() {
@@ -15,7 +16,9 @@ export default class Contact extends Component {
           <a className="contact--link" href="https://www.linkedin.com/in/zach-vansomeren/">
             <img className="contact--image" src={linkedin} alt="Linked In" />
           </a>
-          <a className="contact--link" href="mailto:zvansomeren@gmail.com">Email</a>
+          <a className="contact--link" href="mailto:zvansomeren@gmail.com">
+            <img className="contact--image" src={gmail} alt="Gmail" />
+          </a>
         </div>
       </main>
     )

@@ -98,11 +98,7 @@ nav .social-media__icons {
 
 .selected {
   color: black;
-}
-
-.selected::before {
-  content: "👉";
-  margin-right: 5px;
+  text-decoration: underline;
 }
 
 .nav-drawer a {
@@ -290,4 +286,5 @@ li:last-of-type::after {
 .contact--image {
   width: 40px;
   height: 40px;
+  margin: 10px;
 }

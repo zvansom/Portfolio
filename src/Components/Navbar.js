@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import GitHub from '../assets/github.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import Resume from '../assets/file.svg';
+import resume from '../assets/Resume.pdf';
 import { ReactComponent as Menu } from '../assets/menu.svg';
 import { ReactComponent as Close } from '../assets/close.svg';
 
@@ -21,7 +22,7 @@ export default class Navbar extends Component {
           <Menu onClick={ this.toggleDrawer } className="nav-menu" />
         }
         <div className="social-media">
-          <a className="resume" href="#" target="_blank">
+          <a className="resume" href={resume} rel="noopener noreferrer" target="_blank">
             <img className="social-media__icons" src={Resume} alt="Zach VanSomeren's Resume" />Resume
           </a>
           <a href="https://github.com/zvansom">
