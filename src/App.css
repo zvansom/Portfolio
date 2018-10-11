@@ -279,6 +279,23 @@ li:last-of-type::after {
   color: #eee;
 }
 
+.project-card--awards {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  font-size: 1.4rem;
+  background: white;
+}
+
+.project-card--award::before {
+  background-image: url('./assets/gold-medal.png');
+}
+
+.image-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
 /* ----------------------------------
 ---------  CONTACT PAGE    -----------
 -------------------------------    */
