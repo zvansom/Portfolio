@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProjectCard from '../Components/ProjectCard';
 import pacman from '../assets/pacman.png';
 import brewly from '../assets/brewly.png';
+import parkOwl from '../assets/ParkOwl.png';
 
 const PROJECT_DATA = [
   {
@@ -18,13 +19,13 @@ const PROJECT_DATA = [
     github: 'https://github.com/zvansom/Brewly',
     imgSrc: brewly,
     description: 'In my free time, my wife and I enjoy brewing our own beer.  We\'ve always used a pen and paper to record our notes on the process.  Now we use 1s and 0s.  This was my first full-stack project.  It follows the traditional MVC structure and relies on RESTful routing.  The server side application is written in Express in a Node environment.  It uses a Postgres relational database for persistant data.  The views are all rendered from embedded Javascript.',
-  // },{
-  //   title: 'ParkOwl',
-  //   tagline: 'Civic minded mobile app for public parks',
-  //   github: 'https://github.com/zvansom/hackathon-parks',
-  //   imgSrc: '',
-  //   description: '',
-  //   award: 'Hackathon winner',
+  },{
+    title: 'ParkOwl',
+    tagline: 'Civic minded mobile app for public parks',
+    github: 'https://github.com/zvansom/hackathon-parks',
+    imgSrc: parkOwl,
+    description: '',
+    award: 'Hackathon winner',
   },
 ]
 
