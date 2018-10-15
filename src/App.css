@@ -58,6 +58,7 @@ nav img {
   height: 40px;
   justify-self: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 nav a {
@@ -136,6 +137,12 @@ main {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 600px) {
+  .home--title {
+    margin-top: 10vh;
+  }
+}
+
 .home--title span {
   color: var(--green);
   font-weight: 500;
@@ -155,7 +162,7 @@ main {
 
 .home--cta {
   font-size: 3rem;
-  padding: 20px;
+  justify-self: center; 
   text-decoration: none;
   color: var(--green);
 }
@@ -262,6 +269,7 @@ li:last-of-type::after {
 
 .project-card--description {
   font-size: 1.4rem;
+  text-align: left;
 }
 
 .project-card--link {
@@ -285,10 +293,6 @@ li:last-of-type::after {
   left: 20%;
   font-size: 1.4rem;
   background: white;
-}
-
-.project-card--award::before {
-  background-image: url('./assets/gold-medal.png');
 }
 
 .image-container {

@@ -25,10 +25,10 @@ export default class Navbar extends Component {
           <a className="resume" href={resume} rel="noopener noreferrer" target="_blank">
             <img className="social-media__icons" src={Resume} alt="Zach VanSomeren's Resume" />Resume
           </a>
-          <a href="https://github.com/zvansom">
+          <a href="https://github.com/zvansom" rel="noopener noreferrer" target="_blank">
             <img className="social-media__icons" src={GitHub} alt="Github" />
           </a>
-          <a href="https://www.linkedin.com/in/zach-vansomeren/">
+          <a href="https://www.linkedin.com/in/zach-vansomeren/" rel="noopener noreferrer" target="_blank">
             <img className="social-media__icons" src={LinkedIn} alt="LinkedIn" />
           </a>
         </div>
