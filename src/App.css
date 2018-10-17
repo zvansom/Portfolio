@@ -289,10 +289,10 @@ li:last-of-type::after {
 
 .project-card--awards {
   position: absolute;
-  top: 0;
+  max-width: 100px;
+  top: -40px;
   left: 20%;
   font-size: 1.4rem;
-  background: white;
 }
 
 .image-container {

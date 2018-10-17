@@ -3,6 +3,7 @@ import ProjectCard from '../Components/ProjectCard';
 import pacman from '../assets/pacman.png';
 import brewly from '../assets/brewly.png';
 import parkOwl from '../assets/ParkOwl.png';
+import hackathon from '../assets/hackathon.png';
 
 const PROJECT_DATA = [
   {
@@ -25,7 +26,7 @@ const PROJECT_DATA = [
     github: 'https://github.com/zvansom/hackathon-parks',
     imgSrc: parkOwl,
     description: 'In this hackathon we worked as teams of four consisting of 2 UX Designers and 2 Devs.  We were tasked with coming up with a citizen politic web application.  The overall concept is a mobile application that facilitates reporting damage or accesability issues in public parks.  It is a full stack application, built in Express with user sessions.  Primary development occured in a 6.5 hour period.',
-    award: 'Hackathon winner',
+    award: hackathon,
   },
 ]
 
@@ -43,7 +44,7 @@ export default class Projects extends Component {
           link={project.link}
           imgSrc={project.imgSrc}
           description={project.description}
-          award={project.award}
+          awardSrc={project.award}
         />)}
       </main> 
     )
