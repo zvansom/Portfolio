@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectCard = ({title, tagline, description, github, link, imgSrc, awardSrc=''}) => (
+const ProjectCard = ({title, tagline, description, github, link, imgSrc, awardSrc}) => (
   <section className="project-card">
     <h3 className="project-card--title">{title}</h3>
     <h4 className="project-card--subtitle">{tagline}</h4>
@@ -11,7 +11,8 @@ const ProjectCard = ({title, tagline, description, github, link, imgSrc, awardSr
     </div>
     <div className="image-container">
       <img className="project-card--screenshot" src={imgSrc} alt={title} />
-      <img className="project-card--awards" src={awardSrc} alt="award" />
+      {awardSrc &&
+      <img className="project-card--awards" src={awardSrc} alt="award" />}
     </div>
   </section>
 )
