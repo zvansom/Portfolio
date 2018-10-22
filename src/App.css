@@ -145,9 +145,6 @@ main {
     width: 60px;
   }
 
-  :root {
-    font-size: 7px;
-  }
 }
 
 .home--title span {
@@ -230,7 +227,7 @@ ul {
 
 li {
   font-size: 1.4rem;
-  display: inline;
+  display: inline-block;
 }
 
 
@@ -250,6 +247,10 @@ li:last-of-type::after {
 
   li::after {
     content: '';
+  }
+
+  .about--image {
+    display: none;
   }
 }
 
