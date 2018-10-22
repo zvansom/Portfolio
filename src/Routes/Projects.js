@@ -27,6 +27,12 @@ const PROJECT_DATA = [
     imgSrc: parkOwl,
     description: 'In this hackathon we worked as teams of four consisting of 2 UX Designers and 2 Devs.  We were tasked with coming up with a citizen politic web application.  The overall concept is a mobile application that facilitates reporting damage or accesability issues in public parks.  It is a full stack application, built in Express with user sessions.  Primary development occured in a 6.5 hour period.',
     award: hackathon,
+  // },{
+  //   title: 'Pitch Manager',
+  //   tagline: 'A project management resource for freelance writers',
+  //   github: 'https://github.com/zvansom/client-Pitch-Manager',
+  //   imgSrc: ,
+    // description: 'This full-stack project ',
   },
 ]
 

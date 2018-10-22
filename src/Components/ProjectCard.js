@@ -10,7 +10,7 @@ const ProjectCard = ({title, tagline, description, github, link, imgSrc, awardSr
       {link && <a className="project-card--link" rel="noopener noreferrer" target="_blank" href={link}>Link</a>}
     </div>
     <div className="image-container">
-      <img className="project-card--screenshot" src={imgSrc} alt={title} />
+      <a href={link} target="_blank"><img className="project-card--screenshot" src={imgSrc} alt={title} /></a>
       {awardSrc &&
       <img className="project-card--awards" src={awardSrc} alt="award" />}
     </div>

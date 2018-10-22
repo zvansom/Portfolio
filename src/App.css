@@ -265,12 +265,6 @@ li:last-of-type::after {
   justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .project-card {
-    grid-template-columns: 100%;
-  }
-}
-
 .project-card--title,
 .contact--title {
   font-size: 4rem;
@@ -323,12 +317,21 @@ li:last-of-type::after {
   max-width: 100px;
   top: -40px;
   left: 20%;
-  font-size: 1.4rem;
 }
 
 .image-container {
   position: relative;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+  .image-container {
+    display: none;
+  }
 }
 
 /* ----------------------------------
@@ -340,6 +343,7 @@ li:last-of-type::after {
 }
 
 .contact--image {
+  display: inline-block;
   width: 80px;
   height: 80px;
   margin: 10px;
