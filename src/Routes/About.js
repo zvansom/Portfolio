@@ -4,9 +4,9 @@ import headshot from '../assets/headshot.png';
 const About = () => (
   <main className="about">
     <h2 className="about--title">About Me</h2>
-    <h3 className="about--headline">My path to web development is as common as it is unusual, but looking closer a theme started to emerge: learn a set of skills, proceed to solve problems.</h3>
+    <h3 className="about--headline"></h3>
 
-    <p className="about--text">This theme first showed up during my time in the Army. Whether it involved jumping out of a plane or earning my Expert Infantryman's Badge, I found that by challenging myself to learn and demonstrate mastery of a skill it gave me tremendous personal reward!</p>
+    <p className="about--text">Whether it involved jumping out of a plane or earning my Expert Infantryman's Badge; my time in the Army taught me that I found that by pushing myself to learn and master a skill, I felt tremendous sense of personal accomplishment.  I learned early in my time in the service that the greatest reward was the result of a lot of hard work.  More importantly, I learned that working with a team of dedicated individuals, you accomplish more as a group than you could ever dream to accomplish alone.</p>
 
     <p className="about--text">After leaving the Army I started to explore my love for building things.  I became a carpenter and spent 3 years as an apprentice building hospitals and medical clinics.  Not only did this allow me to learn new skills, but it presented unique and new challenges for me to tackle.</p>
     

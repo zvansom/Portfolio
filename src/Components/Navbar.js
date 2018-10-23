@@ -23,7 +23,7 @@ export default class Navbar extends Component {
         }
         <div className="social-media">
           <a className="resume" href={resume} rel="noopener noreferrer" target="_blank">
-            <img className="social-media__icons" src={Resume} alt="Zach VanSomeren's Resume" />Resume
+            <img className="social-media__icons" src={Resume} alt="Zach VanSomeren's Resume" />
           </a>
           <a href="https://github.com/zvansom" rel="noopener noreferrer" target="_blank">
             <img className="social-media__icons" src={GitHub} alt="Github" />

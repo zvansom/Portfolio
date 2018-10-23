@@ -41,20 +41,22 @@ h6 {
 ----------------------------------  */
 
 nav {
-  width: 100px;
+  min-width: 100px;
   background: var(--green);
   height: 100vh;
   z-index: 2;
   position: fixed;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
 }
 
 nav .nav-menu,
 nav img {
-  width: 40px;
+  max-width: 40px;
   height: 40px;
   justify-self: center;
   margin-top: 20px;
@@ -67,19 +69,57 @@ nav a {
 }
 
 nav .social-media {
-  position: absolute;
   bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 1rem;
 }
 
 nav .resume {
   grid-column: span 2;
+  position: relative;
+  align-self: flex-end;
+}
+
+.resume:hover {
+  cursor: pointer;
+}
+
+.resume::after {
+  content: 'Resume';
+  position: absolute;
+  bottom: -1.6rem;
+  left: 10%;
+  font-size: 1.6rem;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    min-width: 6rem;
+  }
+  
+  nav .social-media {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
+  }
+  
+  nav .resume {
+    grid-column: span 1;
+  }
+
+  .resume::after {
+    font-size: 1.2rem;
+    bottom: -1.2rem;
+    left: 0;
+  }
 }
 
 nav .social-media__icons {
-  width: 40px;
+  max-width: 40px;
   height: 40px;
 }
 
