@@ -4,6 +4,7 @@ import pacman from '../assets/pacman.png';
 import brewly from '../assets/brewly.png';
 import parkOwl from '../assets/ParkOwl.png';
 import hackathon from '../assets/hackathon.png';
+import lvsPortfolio from '../assets/lvsPortfolio.png';
 
 const PROJECT_DATA = [
   {
@@ -27,13 +28,14 @@ const PROJECT_DATA = [
     imgSrc: parkOwl,
     description: 'In this hackathon we worked as teams of four consisting of 2 UX Designers and 2 Devs.  We were tasked with coming up with a citizen politic web application.  The overall concept is a mobile application that facilitates reporting damage or accesability issues in public parks.  It is a full stack application, built in Express with user sessions.  Primary development occured in a 6.5 hour period.',
     award: hackathon,
-  // },{
-  //   title: 'Pitch Manager',
-  //   tagline: 'A project management resource for freelance writers',
-  //   github: 'https://github.com/zvansom/client-Pitch-Manager',
-  //   imgSrc: ,
-    // description: 'This full-stack project ',
-  },
+  },{
+    title: 'Lindsay VanSomeren Portfolio',
+    tagline: 'A portfolio site for a freelance writer',
+    link: 'https://lindsayvansomeren.com',
+    github: 'https://github.com/zvansom/LVSPortfolioClient',
+    imgSrc: lvsPortfolio,
+    description: `This was the first project I completed since graduating from General Assembly. This website was commissioned by my wife to upgrade and replace her existing portfolio page created via a Wordpress template. She worked with a professional designer to finalize the overall design and flow of the site. Then images and PSD files were turned over to me for the development. The project was bootstrapped with Create-React-App. It also features a contact form that routes collected data through a transactional email API to forward all messages received securely through to the client's email. This project was also the first time I worked with FTP.`
+  }
 ]
 
 export default class Projects extends Component {
